@@ -1,0 +1,75 @@
+Negócio (O que)
+===============
+Decoração, Manutenção e Reforma de calçadas.
+
+Atividades de negócio (O que)
+=====================
+- Dar manutenção na Calçada do Cliente;
+- Decorar a Calçada do Cliente;
+- Reformar a Calçada do Cliente;
+- Resolver algum eventual problema de encanamento na Calçada do Cliente;
+- Divulgação do trabalho nas redes sociais;
+
+Problema/Oportunidade 
+=====================
+Devido a Grande quantidade de serviços, os registros do perímetro tanto do poste, quando das calçadas acabam sendo trocados gerando eventuais perdas e dores de cabeça. 
+Com isso a implementação de um sistema onde o funcionário precisará apenas das medidas para o cálculo do perímetro irá livrar o dono dessas recorrentes alterações.
+
+Processos de negócio (Como)
+===========================
+Em todos os casos sendo manutenção, reforma ou decoração, o cliente devera entrar em contato, seja em redes sociais ou telefone fixo, e um técnico ira ir no endereço requisitado e  vai realizar as medidas da calçada. Após as medidas serem registradas no sistema, o técnico deverá perguntar ao cliente que tipo de matérias irá desejar e apontar prováveis problemas que há na calçada, como vazamento no encanamento ou pragas.
+E após o contrato ser feito o técnico irá requisitar os materiais e uma equipe irá no local realizar o serviço com as medidas e materiais já prontos.
+
+Regras de negócio (Como)
+========================
+
+-Após requisitada a empresa deverá enviar um técnico para avaliação em no máximo 3 dias.
+-O técnico sempre deverá procurar eventuais problemas na calçada, e caso ele não identificar e a equipe ou o cliente identificar, a manutenção será por conta da empresa.
+-Qualquer Desperdício de material deverá ser por conta da empresa.
+-Se houver alguma reclamação de assédio por parte da equipe, o responsável deverá ser punido.
+
+Stakeholders (Quem)
+===================
+
+- Técnico
+- Clientes
+- Equipe
+-Dono 
+
+Vocabulário
+===========
+
+
+
+=============================================================================
+
+Requisitos
+==========
+
+Projeto
+-------
+- O Sistema deverá ter uma interface de fácil entendimento;
+- O Sistema deverá estar pronto em uma semana;
+- O Sistema deverá ser desenvolvido em Javascript;
+- Além da entrega do software, deverá ser produzido um manual com instruções de uso compostas por texto e imagens;
+
+Produto - software
+------------------
+
+    Quanto ao detalhamento:
+    **********************
+    Stakeholder: superficiais (com foco em negócio, principalmente)
+    ***********
+    - O sistema deve ser seguro;
+    - O sistema deve permitir que o técnico realize o orçamento;
+    - O sistema deve realizar os cálculos das medidas.
+
+
+    Sistema (software): detalhados
+    ******************
+    - O sistema deve armazenar as senhas dos usuários criptografas com o algoritmo BCrypt;
+    - Qualquer comunicação entre cliente e servidor deve se dar por meio de um canal seguro, com HTTPS;
+    - Nenhum dado sensível, como senha, número de cartão de crédito etc., deve ser enviado em requisições
+      usando o método HTTP GET;
+    - Deve ser implementada autenticação com usuário e senha, sendo que a senha deve expirar a cada 
+      meses e deve ter tamanho mínimo 12;
